@@ -1,7 +1,2 @@
-DROP LOGIN [TemplateEngineAdmin]
-
 CREATE DATABASE [Cerberus]
 GO
-USE [CERBERUS]
-CREATE LOGIN [TemplateEngineAdmin] WITH PASSWORD=N'YOUR_PASSWORD_HERE', DEFAULT_DATABASE=[Cerberus]
-CREATE USER [TemplateEngineAdmin] FOR LOGIN [TemplateEngineAdmin] WITH DEFAULT_SCHEMA=[dbo]

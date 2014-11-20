@@ -38,7 +38,7 @@ namespace Cerberus.Tool.TemplateEngine.Business
 
 		public TemplateCollection GetTemplates(TemplateSearchParameters searchParameters = null)
 		{
-			return TemplateCollection.CreateFromDataObjectCollection(DataAccess.TemplateRepository.GetTemplates(searchParameters));
+			return TemplateCollection.CreateFromDataObjectCollection(DataAccess.TemplateRepository.GetTemplates(searchParameters ?? new TemplateSearchParameters()));
 		}
 
 		public bool RemoveTemplate(int templateId)

@@ -157,7 +157,7 @@ namespace Cerberus.Tool.TemplateEngine.Business
 				CreatedByUserId = this.CreatedByUserId,
 				CreatedDate = this.CreatedDate,
 				LastModifiedDate = this.LastModifiedDate,
-				VisualProperties = this.VisualProperties
+				VisualProperties = this.VisualProperties ?? string.Empty
 			};
 		}
 
